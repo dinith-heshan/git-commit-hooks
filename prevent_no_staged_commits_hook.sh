@@ -1,7 +1,7 @@
 !/bin/sh
 
 # =========================
-# prevent no staged commits
+# Prevent no staged commits
 # =========================
 
 if git diff --cached --quiet; then
