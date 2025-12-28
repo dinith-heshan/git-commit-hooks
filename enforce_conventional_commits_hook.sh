@@ -14,6 +14,8 @@ PATTERN="^(feat|fix|refactor|style|chore|test|docs|WIP)(\([a-zA-Z0-9_-]+\))?: .+
 # Check if commit message matches the pattern
 if ! echo "$COMMIT_MSG" | grep -Eq "$PATTERN"; then
     echo "Invalid commit message format."
+    echo ""
+    
     echo "Your commit message should follow Conventional Commits:"
     echo "  <type>[optional scope]: <description>"
     echo ""
