@@ -1,14 +1,14 @@
 #!/bin/sh
 
 # ============================
-# Enforce Conventional Commits
+# Enforce conventional commits
 # ============================
 
 # Commit message file
 COMMIT_MSG_FILE=$1
 COMMIT_MSG=$(cat "$COMMIT_MSG_FILE")
 
-# Regex pattern for Conventional Commits
+# Regex pattern for conventional commits
 PATTERN="^(feat|fix|refactor|style|chore|test|docs|WIP)(\([a-zA-Z0-9_-]+\))?: .+"
 
 # Check if commit message matches the pattern
